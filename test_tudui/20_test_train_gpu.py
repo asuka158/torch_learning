@@ -50,7 +50,7 @@ loss_fn = nn.CrossEntropyLoss()
 loss_fn.to(device)
 
 # 5. 优化器
-learning_rate = 0.01
+learning_rate = 0.005
 optimizer = torch.optim.SGD(tudui.parameters(), lr=learning_rate)
 
 # 6. 设置训练网络的一些参数
@@ -59,7 +59,7 @@ total_train_step = 0
 # 记录测试的次数
 total_test_step = 0
 # 训练的轮数
-epoch = 10
+epoch = 30
 
 # 添加tensorboard
 writer = SummaryWriter("./logs")
